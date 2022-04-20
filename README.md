@@ -17,7 +17,8 @@ Tested using insomnia:
 Registering
 
   POST http://localhost:5001/user
-
+  
+  JSON body:
   {
   	"username": "SamM",
   	"email": "samM@email.com",
@@ -27,7 +28,8 @@ Registering
 Login 
 
   POST http://localhost:5001/login
-  
+
+  JSON body:
   {
 	"username": "SamM",
 	"password": "test123"
@@ -40,5 +42,18 @@ Accesing User
   Header - 
   name: Authorization 
   value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjYwMTMxZGVmNWVjYTcwZDRiZWZjZDgiLCJpYXQiOjE2NTA0NjM1MTd9.XIFuMy6TjIfKHaLsXp_n5yAIQUWHXdeaHfdoUqJ7_L4
+  
+ 
+Deleting User
+ 
+ DELETE http://localhost:5001/user/SamM
+ 
+ Header - 
+  name: Authorization 
+  value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjYwMTMxZGVmNWVjYTcwZDRiZWZjZDgiLCJpYXQiOjE2NTA0NjM1MTd9.XIFuMy6TjIfKHaLsXp_n5yAIQUWHXdeaHfdoUqJ7_L4
+  
+  
+ 
+
   
   
